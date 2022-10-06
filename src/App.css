@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #ddd0b5 0%, #9fa390 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    padding-top: 200px;
+    user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-gato {
+    position: relative;
+    margin: 0 auto; 
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, #3a3935 0%, #24201c 100%);  
+    box-shadow: 0 19px 40px rgba(19, 19, 19, .50),0 15px 12px rgba(19, 19, 19, .12);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.marcador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #928c83 0%, #96897a 100%); 
+    width: 100%;
+    height: 25%;
+    font-size: 200%;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+    border: 2px solid #bbcc26;
+    padding: center;
+    font-size: 400%;
+    color: #bbcc26;
+    background-color: #161b1b;
+    transition: all 400ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    color: #f500f5;
+    background-color: #364c4d;
+    border: 2px solid #ffce5c22;
+}
+
+button.disabled{
+    background: #999;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.tablero {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 9px 10px rgba(183, 228, 61, 0.836),0 15px 12px rgba(19, 19, 19, .12);
+
+}
+
+.tablero button {
+    display: block;
+    position: relative;
+    width: 33.33%;
+    height: 33.33%;
+    float: left;  
+}
+
+.tablero div {
+    display: block;
+    position: relative;
+    width: 33.33%;
+    height: 33.33%;
+    float: left;
 }
